@@ -27,8 +27,8 @@ void loop() {
     pressed = false;
   }
   if(minutes == userMinutes){
-    cp.playTone(300,2000);
-    CircuitPlayground.playTone(660,100);
+  cp.playTone(300,10000);
+  CircuitPlayground.playTone(660,100);
 delay(150);
 CircuitPlayground.playTone(660,100);
 delay(300);
