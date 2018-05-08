@@ -411,4 +411,36 @@ if (color == 2) {
     cp.setPixelColor(i,0,255,0);
 }
 }
+if (cp.readCap(0) >= 200) {
+    color = 3;
+}
+if (color == 3) {
+  for (int i=0;i<10;i++) {
+    cp.setPixelColor(i,0,0,255);
+}
+}
+if (cp.readCap(0) >= 200) {
+    color = 4;
+}
+if (color == 4) {
+  for (int i=0;i<10;i++) {
+    cp.setPixelColor(i,255,255,0);
+}
+}
+if (cp.readCap(0) >= 200) {
+    color = 5;
+}
+if (color == 5) {
+  for (int i=0;i<10;i++) {
+    cp.setPixelColor(i,255,0,255);
+}
+}
+if (cp.readCap(0) >= 200) {
+    color = 6;
+}
+if (color == 6) {
+  for (int i=0;i<10;i++) {
+    cp.setPixelColor(i,0,255,255);
+}
+}
 }
