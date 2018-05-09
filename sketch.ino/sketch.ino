@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if(lb == 1 && !pressed){
+  if(cp.readCap(10) && !pressed){
     pressed = true;
     userMinutes++;
   }
@@ -435,7 +435,7 @@ if (color == 5) {
     cp.setPixelColor(i,255,0,255);
 }
 }
-if (cp.readCap(5) >= 200) {
+if (cp.readCap(6) >= 200) {
     color = 6;
 }
 if (color == 6) {
